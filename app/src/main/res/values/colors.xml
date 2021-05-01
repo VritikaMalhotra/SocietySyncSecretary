@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bgrey">#F1F0F2</color>
+    <color name="button">#8B16FF</color>
+    <color name="white">#ffffff</color>
+    <color name="backgroundshade">#9A9595</color>
+    <color name="complaint_text_back">#F2F2F2</color>
+</resources>
