@@ -2,6 +2,7 @@ package com.example.societysyncsecretary.CommonClasses;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -35,7 +36,7 @@ public class Home extends AppCompatActivity {
     private long backPressed;
 
     private TextView textViewName;
-    private Button addNotice,buttonLogout,viewNotice,viewComplaint,verifyResident;
+    private CardView addNotice,buttonLogout,viewNotice,viewComplaint,verifyResident;
     String id,name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
