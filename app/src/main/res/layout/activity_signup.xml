@@ -6,139 +6,289 @@
     android:layout_height="match_parent"
     tools:context=".CommonClasses.Signup">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-    <EditText
-        android:id="@+id/editTextFullName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Full Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
 
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email Id"
-        app:layout_constraintBottom_toTopOf="@+id/editTextMobileNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-45dp"
+                    android:background="@drawable/circle_left"
 
-    <EditText
-        android:id="@+id/editTextMobileNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Mobile number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextFlatNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextFlatNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Flat Number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextBlockNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                    />
 
-    <EditText
-        android:id="@+id/editTextBlockNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Block Number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextSocietyId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="Sign Up"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:layout_alignParentRight="true"/>
 
-    <EditText
-        android:id="@+id/editTextSocietyId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Society Id"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg1"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Password"
-        app:layout_constraintBottom_toTopOf="@+id/editTextConfirmPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/curved_box"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
 
-    <EditText
-        android:id="@+id/editTextConfirmPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Confirm Password"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSignupSignup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
 
-    <Button
-        android:id="@+id/buttonSignupSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="175dp"
-        android:text="Signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPassword" />
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Username"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
 
-    <TextView
-        android:id="@+id/textViewLoginSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="126dp"
-        android:text="Already registered? Login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignupSignup" />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Email"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Phone No"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextFlatNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Flat No"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextBlockNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Block No"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextSocietyId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Society Id"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Password"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+
+
+                        <EditText
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/editTextConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#DDDDDD"
+                            android:hint= "Confirm Password"
+                            android:textColor="#707070"
+                            android:textSize="25dp"
+                            android:inputType="textEmailAddress"></EditText>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:id="@+id/buttonSignupSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sign Up"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="32dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:background="@drawable/background_shade_2"
+                    android:textColor="@color/white"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/textViewLoginSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account? Login"
+                    android:textSize="20dp"
+                    android:textColor="#4E3883"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="30dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

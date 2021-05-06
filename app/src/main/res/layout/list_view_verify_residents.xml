@@ -16,11 +16,30 @@
         android:padding="12dp"
         android:layout_marginRight="10dp">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             >
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textViewNameVerifyResident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Vritika Malhotra"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/textViewBlockVerifyResident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="A"
+                android:textSize="22sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textViewNameVerifyResident"/>
 
             <TextView
                 android:id="@+id/textViewFlatVerifyResident"
@@ -28,50 +47,43 @@
                 android:layout_height="wrap_content"
                 android:hint="110"
                 android:textSize="22sp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textViewNameVerifyResident"/>
 
+            <Button
+                android:id="@+id/buttonRejectVerifyResident"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/reject"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                />
+            <Button
+                android:id="@+id/buttonAcceptVerifyResident"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/accept"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/buttonRejectVerifyResident"
+                />
             <TextView
-                android:id="@+id/textViewBlockVerifyResident"
-                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textViewMobileVerifyResident"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:gravity="right"
-                android:hint="A"
-                android:textSize="22sp" />
+                android:hint="9638570784"
+                android:textSize="22sp"
+                android:layout_below="@+id/textViewFlatVerifyResident"
+                android:layout_marginTop="8dp"/>
 
-        </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="10dp"
-            android:id="@+id/textViewNameVerifyResident"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Vritika Malhotra"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:fontFamily="@font/poppins_semibold"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:id="@+id/textViewMobileVerifyResident"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="9106435229"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:fontFamily="@font/poppins_semibold"/>
-        <Button
-            android:id="@+id/buttonAcceptVerifyResident"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Accept" />
-        <Button
-            android:id="@+id/buttonRejectVerifyResident"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reject" />
 
+        </RelativeLayout>
     </LinearLayout>
-
-
-
 </LinearLayout>
